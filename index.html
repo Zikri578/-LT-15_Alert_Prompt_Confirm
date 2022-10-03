@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up - Javascript</title>
+</head>
+
+<body>
+    <main id="root">
+        <h1>Pop Up Javascript</h1>
+        <button onclick="alert('Berbahaya Jangan ditekan!!')">Jangan Di Klik!!</button>
+
+        <script>
+            // Prompt
+            let input = prompt("Silahkan Masukkan Angka : ");
+            document.writeln(`<p> Data anda Adalah : ${input} </p>`);
+
+            // Confirm
+            let nama = prompt("Masukkan Nama Anda : ");
+            if (nama) {
+                let masuk = confirm("Apakah anda yakin memasukkan nama tersebut? ");
+                document.writeln(`<p> Selamat Datang ${nama} </p>`);
+            } else {
+                document.writeln("<small> Mohon maaf nama anda tidak sesuai </small>");
+            }
+
+            // Contoh Kasus
+            const angka = 45;
+        </script>
+    </main>
+
+</body>
+
+</html>
